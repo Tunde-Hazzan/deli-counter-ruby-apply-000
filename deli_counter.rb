@@ -15,7 +15,7 @@ def line(katz_deli)
   else 
     puts katz_deli
     katz_deli.each_with_index do |value, index| 
-    puts "The line is currently: #{index.to_i+1}. #{value}"
+    puts "The line is currently: #{index.to_i + 1}. #{value}"
     end
 end
 
@@ -33,6 +33,7 @@ def now_serving(katz_deli)
 end
 
 end
+
 take_a_number(katz_deli, "Ada")
 take_a_number(katz_deli, "Grace")
 take_a_number(katz_deli, "Kent")
