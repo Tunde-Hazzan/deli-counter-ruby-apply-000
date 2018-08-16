@@ -14,7 +14,7 @@ def line(katz_deli)
   else 
     line_message = "The line is currently: " 
     katz_deli.each_with_index do |value, index| 
-    message =+ "#{index.to_i+1}. #{value}"
+    line_message =+ "#{index.to_i+1}. #{value}"
     end
 end
   puts line_message
@@ -26,7 +26,8 @@ end
 def now_serving(katz_deli)
   if katz_deli.length == 0 
     puts "There is nobody waiting to  be served!"
-  elseputs "Currently serving #{katz_deli.shift}."
+  else
+    puts "Currently serving #{katz_deli.shift}."
 end
 
 end
