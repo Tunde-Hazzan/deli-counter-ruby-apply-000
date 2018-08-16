@@ -1,6 +1,7 @@
 # Write your code here.
 katz_deli = []
 
+
 def take_a_number(katz_deli, name)
   katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
@@ -9,11 +10,11 @@ end
 
 
 
-def line(x)
+def line
   line_array = []
-  if x.length == 0  
+  if katz_deli.length == 0  
     puts "The line is currently empty."
-  elsif x.length >= 1
+  elsif katz_deli.length >= 1
     x.each_with_index(1) do |name, index| 
       line_array.push("#{index}. #{name}")
     end
