@@ -10,7 +10,7 @@ end
 
 
 
-def line
+def line(katz_deli)
   line_array = []
   if katz_deli.length == 0  
     puts "The line is currently empty."
