@@ -9,12 +9,12 @@ end
 
 
 
-def line(annoyingLab)
+def line(x)
   line_array = []
-  if annoyingLab.length == 0  
+  if x.length == 0  
     puts "The line is currently empty."
-  elsif annoyingLab.length >= 1
-    annoyingLab.each_with_index(1) do |name, index| 
+  elsif x.length >= 1
+    x.each_with_index(1) do |name, index| 
       line_array.push("#{index}. #{name}")
     end
     puts "The line is currently: #{line_array.join(" ")}."
