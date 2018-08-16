@@ -1,5 +1,5 @@
 # Write your code here.
-katz_deli = ["jo","jim","jon"]
+katz_deli = []
 
 def take_a_number(katz_deli, name)
   katz_deli << name
